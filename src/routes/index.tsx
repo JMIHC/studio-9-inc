@@ -16,15 +16,15 @@ export default component$(() => {
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-3 gap-4'>
         {primaryFeatures.map(i => 
-          <div className='bg-slate-600 p-6 hover:-m-4 text-white h-40'>
-            {i.title}
+          <div className='hover:ease-in-out hover:duration-300 hover:-m-4 text-white h-40'>
+            <img src={i.image} alt={i.title} />
           </div>  
         )}
       </div>
       <div className='grid grid-cols-2 sm:grid-cols-6 gap-4 pt-4'>
         {secondaryFeatures.map(i => 
-          <div className='bg-purple-500 p-4 hover:-m-4 text-white h-24'>
-            {i.title}
+          <div className='hover:ease-in-out hover:duration-300 hover:-m-4 text-white h-24'>
+            <img src={i.image} alt={i.title} />
           </div>
         )}
       </div>
